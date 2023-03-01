@@ -17,8 +17,3 @@ server.get("/done", async (req, res) => {
     setTimeout(process.exit, 2000)
     res.json({done:"done", exiting:"in 2 seconds"})
 })
-
-process.on('SIGTERM', signal => {
-  console.log(`Process ${process.pid} received a SIGTERM signal`)
-  process.exit(0)
-})
