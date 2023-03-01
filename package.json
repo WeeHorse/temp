@@ -8,7 +8,7 @@
     "test": "cypress run --browser chrome",
     "start": "node server.js",
     "make-steps": "node _auto-generate-step-definitions.js",
-    "git-action-run-test": "concurrently -s last \"npm run start\" \"npm run test\""
+    "git-action-run-test": "concurrently -s all \"npm run start\" \"npm run test\""
   },
   "cypress-cucumber-preprocessor": {
     "json": {
