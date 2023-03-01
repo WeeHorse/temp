@@ -7,7 +7,7 @@ Feature: Search
 
   Scenario Outline: Searching for products including "<searchTerm>"
     When I enter the letters "<searchTerm>" in the search field
-    Then I should see the product "<productName>"
+    Then I should see the product productName
 
     Examples:
       | searchTerm | productName |
